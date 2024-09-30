@@ -77,11 +77,11 @@
                     <?php if(isset($_POST['options_'.$qkey])): ?>
                         <?php if($question['answer'] == $_POST['options_'.$qkey]): ?>
                             <div class="alert alert-success" role="alert">
-                                A simple success alert—check it out!
+                                Right!
                             </div>
                         <?php else: ?>
                             <div class="alert alert-danger" role="alert">
-                                A simple danger alert—check it out!
+                                Wrong!
                             </div>
                         <?php endif; ?>
                     <?php else: ?>
@@ -112,7 +112,7 @@
                 </div>
             </div>
             <?php $goodAnswer = ""; endforeach; ?>
-        <button type="submit" class="btn btn-primary w-100">Submit</button>
+        <button type="submit" class="btn btn-success w-100">Submit</button>
     </form>
 </div>
 
